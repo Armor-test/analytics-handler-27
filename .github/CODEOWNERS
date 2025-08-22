@@ -1,0 +1,35 @@
+# CODEOWNERS file for analytics-handler-27
+# Global owners - will be requested for all PRs
+* @Armor-test/squad-search @Armor-test/dept-database @Armor-test/team-architecture
+
+# Directory ownership
+/migrations/ @Armor-test/squad-automation @Armor-test/unit-storage @Armor-test/team-product
+/auth/ @Armor-test/team-product @Armor-test/dept-payments
+/config/ @Armor-test/unit-mobile @Armor-test/grp-apps @Armor-test/grp-product
+/deploy/ @Armor-test/squad-storage @Armor-test/squad-ui @Armor-test/grp-ui
+/tools/ @Armor-test/dept-frontend @Armor-test/team-auth
+/security/ @Armor-test/grp-sre @Armor-test/squad-storage
+/src/ @Armor-test/squad-reporting @Armor-test/unit-mobile @Armor-test/dept-network
+/helpers/ @Armor-test/grp-reporting @Armor-test/squad-automation
+/utils/ @Armor-test/unit-search @Armor-test/dept-devops @Armor-test/squad-notifications
+/internal/ @Armor-test/team-content @Armor-test/dept-data @Armor-test/dept-network
+
+# File type ownership
+*.cpp @Armor-test/grp-sre @Armor-test/grp-reliability
+*.go @Armor-test/team-auth @Armor-test/team-qa
+*.gradle @Armor-test/dept-devops @Armor-test/squad-ui
+*.cs @Armor-test/team-support @Armor-test/grp-reliability
+*.lock @Armor-test/team-support @Armor-test/grp-release
+*.yml @Armor-test/dept-messaging @Armor-test/team-auth @Armor-test/squad-search
+*.toml @Armor-test/dept-qa @Armor-test/unit-ux @Armor-test/unit-storage
+*.config @Armor-test/dept-network @Armor-test/squad-network @Armor-test/unit-storage
+*.scss @Armor-test/grp-product @Armor-test/squad-storage @Armor-test/squad-ui
+*.html @Armor-test/team-support @Armor-test/team-qa
+*.json @Armor-test/dept-network @Armor-test/dept-messaging
+*.rs @Armor-test/unit-search @Armor-test/dept-messaging
+*.ts @Armor-test/unit-ux @Armor-test/dept-data @Armor-test/unit-mobile
+
+# Security and special files
+Jenkinsfile @Armor-test/ci-team @Armor-test/devops
+/src/**/security/ @Armor-test/security @Armor-test/compliance
+/src/**/auth/ @Armor-test/security @Armor-test/auth-team
